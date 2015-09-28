@@ -81,7 +81,7 @@ class Gem::Commands::BumpCommand < Gem::Command
 
     def commit
       say "Creating commit" unless quiet?
-      system("git commit -m \"Bump to #{@new_version_number}\"")
+      system("git commit -m \"Bump #{gem_name} to #{@new_version_number}\"")
     end
 
     def push

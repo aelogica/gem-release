@@ -43,6 +43,6 @@ class Gem::Commands::TagCommand < Gem::Command
     end
 
     def tag_name
-      "v#{gem_version}"
+      "#{gem_name}-v#{gem_version}"
     end
 end
